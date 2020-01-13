@@ -6,17 +6,18 @@
 		<meta name="robots" content="all">
 		<meta name="theme-color" content="#232831">
 		<meta name="keywords" content="misskey, 藍, ai">
-		<meta name="description" content="Misskey看板娘「藍」のプロフィール">
+		<meta name="description" content="Misskey看板娘「藍」のプロフィール。Have a cute day!">
 		<meta property="og:title" content="藍">
 		<meta property="og:type" content="article">
-		<meta property="og:description" content="藍's profile">
-		<meta property="og:url" content="https://ai.misskey.xyz">
-		<meta property="og:image" content="https://ai.misskey.xyz/avatar.jpg">
+		<meta property="og:description" content="藍's profile. Have a cute day!">
+		<meta property="og:url" content="https://xn--931a.moe">
+		<meta property="og:image" content="https://xn--931a.moe/avatar.jpg">
 		<meta property="og:site_name" content="藍">
 		<link rel="shortcut icon" href="favicon.ico">
 		<link rel="icon" href="favicon.ico">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.0/css/fork-awesome.min.css" integrity="sha256-sX8HLspqYoXVPetzJRE4wPhIhDBu2NB0kYpufzkQSms=" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
 		<link rel="stylesheet" href="style.css">
 		<link rel="stylesheet" href="icomoon/style.css">
 		<link rel="stylesheet" href="share-buttons.css">
@@ -39,16 +40,64 @@
 				<img id="ai" src="ai.png" alt=""/>
 				<div>
 					<h1 itemprop="name"><ruby>藍<rt>あい</rt></ruby></h1>
-					<p>Misskeyの看板娘を務める女の子AI。皆からは「藍ちゃん」「藍ちゃ」「藍たそ」などと呼ばれる。</p>
-					<p>優しく純真な性格。皆には敬語で礼儀正しいが、ドジしてしまいポンコツと言われることも。一人称は「私」。猫耳はアンテナで、睡眠はデフラグらしい。</p>
-					<p>誕生日: 3月12日 / 身長: 154cm(猫耳含めず) / 特技: 接待オセロ</p>
+					<p>Misskeyの看板娘を務める女の子AI。皆からは「藍ちゃん」「藍ちゃ」「藍たそ」などと呼ばれる。美少女。</p>
+					<p>純真でお世話好きな性格だがポンコツな一面も。猫耳はアンテナで、睡眠はデフラグらしい。</p>
+					<p>誕生日: 3月12日 / 身長: 154cm / 特技: 接待オセロ</p>
 				</div>
 			</article>
 		</main>
 
+		<article id="photo">
+			<!-- Slider main container -->
+			<div class="swiper-container gallery-top">
+				<!-- Additional required wrapper -->
+				<div class="swiper-wrapper">
+					<!-- Slides -->
+					<div class="swiper-slide" style="background-image:url(aiart/17.jpg)"></div>
+					<div class="swiper-slide" style="background-image:url(aiart/14.jpg)"></div>
+				</div>
+				<!-- Add Arrows -->
+				<div class="swiper-button-next swiper-button-white"></div>
+				<div class="swiper-button-prev swiper-button-white"></div>
+			</div>
+			<div class="swiper-container gallery-thumbs">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide" style="background-image:url(aiart/17.jpg)"></div>
+					<div class="swiper-slide" style="background-image:url(aiart/14.jpg)"></div>
+				</div>
+			</div>
+
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+
+			<!-- Initialize Swiper -->
+			<script>
+				const galleryThumbs = new Swiper('.gallery-thumbs', {
+					spaceBetween: 10,
+					slidesPerView: 4,
+					freeMode: true,
+					watchSlidesVisibility: true,
+					watchSlidesProgress: true,
+				});
+				const galleryTop = new Swiper('.gallery-top', {
+					spaceBetween: 10,
+					navigation: {
+						nextEl: '.swiper-button-next',
+						prevEl: '.swiper-button-prev',
+					},
+					thumbs: {
+						swiper: galleryThumbs
+					}
+				});
+			</script>
+		</article>
+
 		<article id="wanted">
 			<h2>#AiArt募集中！</h2>
 			<p>藍のファンアートは歓迎です！ ぜひ #aiart と #misskey タグを付けて皆と共有してください。<br/>このサイトに掲載しても構わないという方は@syuiloまでご連絡ください。</p>
+			<details>
+				<summary>設定資料</summary>
+				<p>赤い目、茶髪の少し長めセミロング、猫耳、頭の右側に赤いリボンのような飾り、「Mi」の胸章付きセーラー服、左手首に「Ai」の刻印が入ったブレスレットのようなもの</p>
+			</details>
 		</article>
 
 		<article id="gallery">
@@ -89,10 +138,6 @@
 					<h3>by @noizenecio</h3>
 				</section>
 				<section>
-					<img src="aiart/7.png" alt=""/>
-					<h3>by @i0e__m</h3>
-				</section>
-				<section>
 					<img src="aiart/8.png" alt=""/>
 					<h3>by @i0e__m</h3>
 				</section>
@@ -107,14 +152,6 @@
 				<section>
 					<img src="aiart/12.png" alt=""/>
 					<h3>by @siotter0</h3>
-				</section>
-				<section>
-					<img src="aiart/13.jpg" alt=""/>
-					<h3>by @syuilo</h3>
-				</section>
-				<section>
-					<img src="aiart/14.jpg" alt=""/>
-					<h3>by @syuilo</h3>
 				</section>
 				<section>
 					<img src="aiart/16.png" alt=""/>
